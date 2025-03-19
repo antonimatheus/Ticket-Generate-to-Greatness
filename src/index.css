@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;;
+}
+
+
+body {
+  /* font-family: Arial, sans-serif; */
+  background-color: #f5f5f5;
+}
+
+
+
+.main-background {
+  width: 1440px;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-top-label{
+  width: 300px;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.center-big-label{
+  width: 700px;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.description-label{
+  width: 500px;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.upload-field{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  min-height: 100px;
+  color: white;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+
+.input-field{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  color: white;
+  font-size: 15px;
+  z-index: 5;
+}
+
+.field-to-dropfile {
+  width: 350px;
+  height: 100px;
+  border: 1.5px dashed white; /* เปลี่ยนเป็นเส้นปะ */
+  border-radius: 15px; /* มุมโค้ง */
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.field-to-dropfile:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+
+}
+
+.transparent-button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.transparent-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.upload-text {
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.button-to-upload-avatar {
+  padding: 5px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: relative; 
+  cursor: pointer; 
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+
+.button-to-upload-avatar img {
+  width: 20px;
+  z-index: 2; 
+  background-color: hsl(0, 0%, 100%) ;
+  cursor: pointer; 
+}
+
+.recomment-size-upload{
+  font-size: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.full-name {
+  width: 350px;
+  height: 50px;
+  border: 1px solid white; 
+  background-color: transparent; 
+  display: flex;
+  align-items: center;
+  padding: 0 10px; 
+  border-radius: 8px;
+  margin-top: 10px;
+  color: white;
+}
+
+.input-full-name {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none; 
+  outline: none; 
+  color: white; 
+  font-size: 16px;
+}
+
+.input-full-name::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* ทำให้ placeholder ดูจางลง */
+}
+
+.button-generate{
+  width: 350px;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 8px;
+  border: 0px solid transparent;
+  cursor: pointer;
+  z-index: 6;
+  background-color: hsl(7, 88%, 67%);
+  transition: background-color 0.3s ease; 
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.button-generate:hover {
+  background-color: hsl(7, 71%, 60%);
+}
+
+.image-container {
+  width: 20px; /* หรือขนาดที่ต้องการ */
+  height: 20px;
+  overflow: hidden; /* ป้องกันรูปเกินขอบ */
+  border-radius: 5px; /* ปรับตามต้องการ */
+}
+
+.uploaded-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.ticket-space{
+  position: relative;
+  z-index: 10;
+}
+
+.img-ticket{
+  z-index: 10;
+  margin-top: 20px;
+}
+
+.num-ticket{
+
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(184, 184, 184);
+  opacity: 3;
+  z-index: 10;
+  position: absolute;
+  right:40px;
+  top: 60px;
+  writing-mode: vertical-lr; /* เปลี่ยนให้ตัวอักษรเป็นแนวตั้ง */
+  text-orientation: upright;
+}
+
+.image-of-ticket{
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  width: 150px;
+  height: 120px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+
+.logo-of-ticket{
+  position: absolute;
+  left: 30px;
+  top: 40px;
+}
+
+.name-of-ticket{
+  font-size: 32px;
+  position: absolute;
+  left: 100px;
+  top: 35px;
+  color: white;
+}
+
+.owner-ticket{
+  width: 300px;
+  position: absolute;
+  left: 180px;
+  bottom: 50px;
+  text-align: start;
+  height: 60px;
+}
+
+.github-owner-ticket{
+
+  width: 300px;
+  position: absolute;
+  left: 180px;
+  bottom: 20px;
+  text-align: start;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.owner-ticket label{
+ font-size: 40px;
+ color: white;
+}
+
+.date-of-ticket{
+  font-size: 25px;
+  position: absolute;
+  left: 105px;
+  top: 80px;
+  color: white;
+}
+
+.ticket-card{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+/* Desktop */
+@media (min-width: 1024px) {
+ .main-background {
+  background-image: url('./assets/background-desktop.png');
+  position: relative;
+  width: 100vw;  /* ให้กว้างเต็มจอ */
+  height: 100vh; /* ให้สูงเต็มจอ */
+  background-size: cover;
+  background-position: center;
+}
+
+
+.pattern-lines {
+  background-image: url('./assets/pattern-lines.svg');
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 200px;
+  z-index: 1; 
+}
+
+ .pattern-circle{
+    background-image: url('./assets/pattern-circle.svg');
+    position: absolute;
+    top: -10%;
+    left: 5%;
+    width: 15.2%;
+    height: 218px;
+    z-index: 1; 
+}
+
+ .pattern-circle-second{
+    background-image: url('./assets/pattern-circle.svg');
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 15.2%;
+    height: 218px;
+    z-index: 1; 
+}
+
+.pattern-squiggly-line-bottom-desktop{
+    background-image: url('./assets/pattern-squiggly-line-bottom-desktop.svg');
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 800px;
+    height: 400px;
+    z-index: 2; 
+}
+
+
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-background {
+    background-image: url('./assets/background-tablet.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .ticket-card{
+    width: 100%;
+  }
+  .center-top-label {
+    width: 250px;
+    font-size: 18px;
+  }
+
+  .center-big-label {
+    width: 600px;
+    font-size: 35px;
+  }
+
+  .description-label {
+    width: 450px;
+    font-size: 14px;
+  }
+
+  .upload-field,
+  .input-field {
+    width: 80%; /* ให้ขนาดลดลงในจอเล็ก */
+  }
+
+  .full-name{
+    width: 100%;
+  }
+
+  .img-ticket{
+    width: 550px;
+  }
+
+  .field-to-dropfile {
+    width: 100%;
+    height: 180px;
+  }
+
+  .transparent-button,
+   .button-generate {
+    width: 80%; /* ให้ปุ่มเต็มความกว้าง */
+  }
+
+  .ticket-space {
+    width: 600px;
+    height: auto;
+  }
+
+  .image-of-ticket {
+    width: 130px;
+    height: 100px;
+  }
+
+  .num-ticket{
+    position: absolute;
+    right: 80px;
+  }
+
+  .name-of-ticket {
+    font-size: 28px;
+    left: 90px;
+    top: 30px;
+  }
+
+  .date-of-ticket {
+    font-size: 22px;
+    left: 90px;
+    top: 70px;
+  }
+
+  .owner-ticket{
+    left: 160px;
+    bottom: 40px;
+  }
+  .github-owner-ticket {
+    left: 160px;
+    bottom: 30px;
+  }
+
+  .owner-ticket label{
+    font-size: 25px;
+  }
+
+  .github-owner-ticket label{
+    font-size: 20px;
+    
+  }
+
+  .pattern-circle {
+    width: 12%;
+    height: 180px;
+  }
+
+  .pattern-circle-second {
+    top: 45%;
+    left: 65%;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+  .main-background {
+    background-image: url('./assets/background-mobile.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .ticket-card{
+    width: 100%;
+  }
+
+  .ticket-space {
+    width: 400px;
+    height: auto;
+  }
+
+
+  .img-ticket{
+    width: 100%; 
+  }
+
+  .center-top-label {
+    width: 200px;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .center-big-label {
+    width: 90%;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .description-label {
+    width: 80%;
+    font-size: 13px;
+  }
+
+   .upload-field,
+  .input-field {
+    width: 80%; /* ให้ขนาดลดลงในจอเล็ก */
+  }
+
+  .full-name{
+    width: 100%;
+  }
+
+  .field-to-dropfile {
+    width: 100%;
+    height: 180px;
+  }
+
+  .field-to-dropfile {
+    width: 100%;
+    height: 80px;
+  }
+
+  .button-generate {
+    width: 90%;
+    height: 40px;
+    font-size: 13px;
+  }
+
+
+  .image-of-ticket {
+    width: 20%;
+    height: 80px;
+    left: 15px;
+    bottom: 20px;
+  
+  }
+
+  .name-of-ticket {
+    font-size: 24px;
+    left: 80px;
+    top: 25px;
+  }
+
+  .date-of-ticket {
+    font-size: 18px;
+    left: 80px;
+    top: 60px;
+  }
+
+  .owner-ticket{
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+  }
+
+  .github-owner-ticket {
+    width: 220px;
+    left: 100px;
+    position: absolute;
+    bottom: 10px;
+  }
+
+   .owner-ticket label{
+    font-size: 18px;
+   }
+
+   .github-owner-ticket label{
+    font-size: 20px;
+   }
+
+  .num-ticket {
+    font-size: 16px;
+    right: 30px;
+    top: 40px;
+  }
+
+  .pattern-circle {
+    width: 10%;
+    height: 150px;
+  }
+
+  .pattern-circle-second {
+    top: 40%;
+    left: 60%;
+  }
+
+  .pattern-squiggly-line-bottom-desktop {
+    display: none; /* ซ่อน pattern ที่ใหญ่เกินไป */
+  }
+
+  .logo-of-ticket{
+    width: 20px;
+  }
+}
