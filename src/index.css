@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
 
 * {
   margin: 0;
@@ -7,13 +7,11 @@
   font-family: "Inconsolata", monospace;
 }
 
-
 body {
   /* font-family: Arial, sans-serif; */
   background-color: #f5f5f5;
+
 }
-
-
 
 .main-background {
   width: 1440px;
@@ -23,7 +21,7 @@ body {
   align-items: center;
 }
 
-.center-top-label{
+.center-top-label {
   width: 300px;
   color: white;
   height: 50px;
@@ -35,7 +33,7 @@ body {
   font-weight: bolder;
 }
 
-.center-big-label{
+.center-big-label {
   width: 700px;
   color: white;
   height: 50px;
@@ -48,7 +46,7 @@ body {
   text-align: center;
 }
 
-.description-label{
+.description-label {
   width: 500px;
   color: white;
   height: 50px;
@@ -61,7 +59,7 @@ body {
   text-align: center;
 }
 
-.upload-field{
+.upload-field {
   display: flex;
   flex-direction: column;
   width: 350px;
@@ -71,8 +69,7 @@ body {
   font-size: 15px;
 }
 
-
-.input-field{
+.input-field {
   display: flex;
   flex-direction: column;
   width: 350px;
@@ -101,7 +98,6 @@ body {
 .button-group {
   display: flex;
   gap: 10px;
-
 }
 
 .transparent-button {
@@ -131,21 +127,20 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  position: relative; 
-  cursor: pointer; 
+  position: relative;
+  cursor: pointer;
   opacity: 0.9;
   margin-bottom: 10px;
 }
 
-
 .button-to-upload-avatar img {
   width: 20px;
-  z-index: 2; 
-  background-color: hsl(0, 0%, 100%) ;
-  cursor: pointer; 
+  z-index: 2;
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
 }
 
-.recomment-size-upload{
+.recomment-size-upload {
   font-size: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -154,11 +149,11 @@ body {
 .full-name {
   width: 350px;
   height: 50px;
-  border: 1px solid white; 
-  background-color: transparent; 
+  border: 1px solid white;
+  background-color: transparent;
   display: flex;
   align-items: center;
-  padding: 0 10px; 
+  padding: 0 10px;
   border-radius: 8px;
   margin-top: 10px;
   color: white;
@@ -168,9 +163,9 @@ body {
   width: 100%;
   height: 100%;
   background: transparent;
-  border: none; 
-  outline: none; 
-  color: white; 
+  border: none;
+  outline: none;
+  color: white;
   font-size: 16px;
 }
 
@@ -178,7 +173,7 @@ body {
   color: rgba(255, 255, 255, 0.5); /* ทำให้ placeholder ดูจางลง */
 }
 
-.button-generate{
+.button-generate {
   width: 350px;
   height: 50px;
   margin-top: 30px;
@@ -187,7 +182,7 @@ body {
   cursor: pointer;
   z-index: 6;
   background-color: hsl(7, 88%, 67%);
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
   font-weight: bolder;
   font-size: 16px;
 }
@@ -209,32 +204,30 @@ body {
   object-fit: cover;
 }
 
-
-.ticket-space{
+.ticket-space {
   position: relative;
   z-index: 10;
 }
 
-.img-ticket{
+.img-ticket {
   z-index: 10;
   margin-top: 20px;
 }
 
-.num-ticket{
-
+.num-ticket {
   font-size: 20px;
   font-weight: bold;
   color: rgb(184, 184, 184);
   opacity: 3;
   z-index: 10;
   position: absolute;
-  right:40px;
+  right: 40px;
   top: 60px;
   writing-mode: vertical-lr; /* เปลี่ยนให้ตัวอักษรเป็นแนวตั้ง */
   text-orientation: upright;
 }
 
-.image-of-ticket{
+.image-of-ticket {
   position: absolute;
   left: 30px;
   bottom: 30px;
@@ -244,14 +237,13 @@ body {
   border-radius: 10px;
 }
 
-
-.logo-of-ticket{
+.logo-of-ticket {
   position: absolute;
   left: 30px;
   top: 40px;
 }
 
-.name-of-ticket{
+.name-of-ticket {
   font-size: 32px;
   position: absolute;
   left: 100px;
@@ -259,7 +251,7 @@ body {
   color: white;
 }
 
-.owner-ticket{
+.owner-ticket {
   width: 300px;
   position: absolute;
   left: 180px;
@@ -268,8 +260,7 @@ body {
   height: 60px;
 }
 
-.github-owner-ticket{
-
+.github-owner-ticket {
   width: 300px;
   position: absolute;
   left: 180px;
@@ -281,12 +272,12 @@ body {
   font-size: 30px;
 }
 
-.owner-ticket label{
- font-size: 40px;
- color: white;
+.owner-ticket label {
+  font-size: 40px;
+  color: white;
 }
 
-.date-of-ticket{
+.date-of-ticket {
   font-size: 25px;
   position: absolute;
   left: 105px;
@@ -294,73 +285,69 @@ body {
   color: white;
 }
 
-.ticket-card{
+.ticket-card {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 
-
 /* Desktop */
 @media (min-width: 1024px) {
- .main-background {
-  background-image: url('./assets/background-desktop.png');
-  position: relative;
-  width: 100vw;  /* ให้กว้างเต็มจอ */
-  height: 100vh; /* ให้สูงเต็มจอ */
-  background-size: cover;
-  background-position: center;
-}
+  .main-background {
+    background-image: url("./assets/background-desktop.png");
+    position: relative;
+    width: 100vw; /* ให้กว้างเต็มจอ */
+    height: 100vh; /* ให้สูงเต็มจอ */
+    background-size: cover;
+    background-position: center;
+  }
 
+  .pattern-lines {
+    background-image: url("./assets/pattern-lines.svg");
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+  }
 
-.pattern-lines {
-  background-image: url('./assets/pattern-lines.svg');
-  position: absolute;
-  top: 0;
-  left: 0%;
-  width: 100%;
-  height: 200px;
-  z-index: 1; 
-}
-
- .pattern-circle{
-    background-image: url('./assets/pattern-circle.svg');
+  .pattern-circle {
+    background-image: url("./assets/pattern-circle.svg");
     position: absolute;
     top: -10%;
     left: 5%;
     width: 15.2%;
     height: 218px;
-    z-index: 1; 
-}
+    z-index: 1;
+  }
 
- .pattern-circle-second{
-    background-image: url('./assets/pattern-circle.svg');
+  .pattern-circle-second {
+    background-image: url("./assets/pattern-circle.svg");
     position: absolute;
     top: 50%;
     left: 70%;
     width: 15.2%;
     height: 218px;
-    z-index: 1; 
-}
+    z-index: 1;
+  }
 
-.pattern-squiggly-line-bottom-desktop{
-    background-image: url('./assets/pattern-squiggly-line-bottom-desktop.svg');
+  .pattern-squiggly-line-bottom-desktop {
+    background-image: url("./assets/pattern-squiggly-line-bottom-desktop.svg");
     position: absolute;
     bottom: 0%;
     left: 0%;
     width: 800px;
     height: 400px;
-    z-index: 2; 
-}
-
-
+    z-index: 2;
+  }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
   .main-background {
-    background-image: url('./assets/background-tablet.png');
+    background-image: url("./assets/background-tablet.png");
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -370,9 +357,8 @@ body {
     align-items: center;
     justify-content: center;
   }
-  
 
-  .ticket-card{
+  .ticket-card {
     width: 100%;
   }
   .center-top-label {
@@ -395,11 +381,11 @@ body {
     width: 80%; /* ให้ขนาดลดลงในจอเล็ก */
   }
 
-  .full-name{
+  .full-name {
     width: 100%;
   }
 
-  .img-ticket{
+  .img-ticket {
     width: 550px;
   }
 
@@ -409,7 +395,7 @@ body {
   }
 
   .transparent-button,
-   .button-generate {
+  .button-generate {
     width: 80%; /* ให้ปุ่มเต็มความกว้าง */
   }
 
@@ -423,7 +409,7 @@ body {
     height: 100px;
   }
 
-  .num-ticket{
+  .num-ticket {
     position: absolute;
     right: 80px;
   }
@@ -440,7 +426,7 @@ body {
     top: 70px;
   }
 
-  .owner-ticket{
+  .owner-ticket {
     left: 160px;
     bottom: 40px;
   }
@@ -449,13 +435,12 @@ body {
     bottom: 30px;
   }
 
-  .owner-ticket label{
+  .owner-ticket label {
     font-size: 25px;
   }
 
-  .github-owner-ticket label{
+  .github-owner-ticket label {
     font-size: 20px;
-    
   }
 
   .pattern-circle {
@@ -469,13 +454,12 @@ body {
   }
 }
 
-
 /* Mobile */
 @media (max-width: 767px) {
   .main-background {
-    background-image: url('./assets/background-mobile.png');
+    background-image: url("./assets/background-mobile.png");
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -486,7 +470,7 @@ body {
     padding: 10px;
   }
 
-  .ticket-card{
+  .ticket-card {
     width: 100%;
   }
 
@@ -495,9 +479,8 @@ body {
     height: auto;
   }
 
-
-  .img-ticket{
-    width: 100%; 
+  .img-ticket {
+    width: 100%;
   }
 
   .center-top-label {
@@ -517,12 +500,12 @@ body {
     font-size: 13px;
   }
 
-   .upload-field,
+  .upload-field,
   .input-field {
     width: 80%; /* ให้ขนาดลดลงในจอเล็ก */
   }
 
-  .full-name{
+  .full-name {
     width: 100%;
   }
 
@@ -542,13 +525,11 @@ body {
     font-size: 13px;
   }
 
-
   .image-of-ticket {
     width: 20%;
     height: 80px;
     left: 15px;
     bottom: 20px;
-  
   }
 
   .name-of-ticket {
@@ -563,7 +544,7 @@ body {
     top: 60px;
   }
 
-  .owner-ticket{
+  .owner-ticket {
     position: absolute;
     bottom: 20px;
     left: 100px;
@@ -576,13 +557,13 @@ body {
     bottom: 10px;
   }
 
-   .owner-ticket label{
+  .owner-ticket label {
     font-size: 18px;
-   }
+  }
 
-   .github-owner-ticket label{
+  .github-owner-ticket label {
     font-size: 20px;
-   }
+  }
 
   .num-ticket {
     font-size: 16px;
@@ -591,6 +572,7 @@ body {
   }
 
   .pattern-circle {
+    display: none;
     width: 10%;
     height: 150px;
   }
@@ -604,7 +586,7 @@ body {
     display: none; /* ซ่อน pattern ที่ใหญ่เกินไป */
   }
 
-  .logo-of-ticket{
+  .logo-of-ticket {
     width: 20px;
   }
 }
