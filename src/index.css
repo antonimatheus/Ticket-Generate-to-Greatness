@@ -215,6 +215,7 @@ body::-webkit-scrollbar {
 
 .img-ticket {
   z-index: 10;
+  
   margin-top: 20px;
 }
 
@@ -479,8 +480,14 @@ body::-webkit-scrollbar {
   }
 
   .ticket-space {
-    width: 400px;
+    width: 450px;
     height: auto;
+    transform: rotate(90deg);
+
+  /* Corrige a posição */
+
+  position: absolute;
+  top: 500px;
   }
 
   .img-ticket {
