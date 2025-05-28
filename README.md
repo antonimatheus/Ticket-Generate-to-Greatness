@@ -10,10 +10,9 @@
 ![vue][VUE__BADGE]
 ![javascript][JAVASCRIPT__BADGE]
 
-
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/0ab4b336-2881-4edc-9360-6a79e54ed5e7" alt="Image Example" width="400px">
-    <img src="https://github.com/user-attachments/assets/b3b3b70e-8671-4c49-a6dc-20285c3f2655" alt="Image Example" width="400px">
+    <img src="https://github.com/user-attachments/assets/5587d949-5f14-4c3b-a197-b777d64a2ccd" alt="Image Example" width="400px">
+    <img src="https://github.com/user-attachments/assets/c5d1cd37-ecc2-4421-8049-1ce8cbcfd8da" alt="Image Example" width="400px">
 </p>
 
 <h2 id="started">📌 About</h2>
