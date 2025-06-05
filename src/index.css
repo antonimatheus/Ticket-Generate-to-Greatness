@@ -10,7 +10,6 @@
 body {
   /* font-family: Arial, sans-serif; */
   background-color: #f5f5f5;
-
 }
 
 body::-webkit-scrollbar {
@@ -215,7 +214,7 @@ body::-webkit-scrollbar {
 
 .img-ticket {
   z-index: 10;
-  
+
   margin-top: 20px;
 }
 
@@ -484,10 +483,10 @@ body::-webkit-scrollbar {
     height: auto;
     transform: rotate(90deg);
 
-  /* Corrige a posição */
+    /* Corrige a posição */
 
-  position: absolute;
-  top: 500px;
+    position: absolute;
+    top: 500px;
   }
 
   .img-ticket {
