@@ -482,9 +482,7 @@ body::-webkit-scrollbar {
     width: 450px;
     height: auto;
     transform: rotate(90deg);
-
     /* Corrige a posição */
-
     position: absolute;
     top: 500px;
   }
